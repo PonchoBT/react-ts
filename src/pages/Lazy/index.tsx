@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 
-const Hola = lazy(() => import("../pages/hola"));
+const Hola = lazy(() => import("./Hola"));
 
 const HomePage = () => {
   return (

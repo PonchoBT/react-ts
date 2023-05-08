@@ -2,27 +2,21 @@ import { useRoutes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Stack from "@mui/material/Stack";
 import LinearProgress from "@mui/material/LinearProgress";
-import Home from "../pages/HomePage";
+import Home from "../pages/Lazy";
+import PadresHijos from "../pages/PadresHijos";
+import Page404 from "../pages/404";
 
-// import Page404 from "../pages/Page404";
-// import Films from "../pages/Films";
-// import Header from "../layout/Header";
-// const Home = lazy(() => import("../pages/HomePage"));
-const Imagen = lazy(() => import("../pages/Imagen"));
+const Imagen = lazy(() => import("../pages/LazyRouter"));
 
 export default function Router() {
   let element = useRoutes([
     {
-      path: "home",
-      element: (
-        <div>
-          <Home />
-        </div>
-      ),
+      path: "home", element: (<div><Home /></div>),
     },
-    // { path: "*", element: <Page404 /> },
-    // { path: "films", element: <Films /> },
-
+    {
+      path: "padreshijos", element: (<div><PadresHijos /></div>),
+    },
+    { path: "*", element: <Page404 /> },
     {
       path: "/",
       element: (
