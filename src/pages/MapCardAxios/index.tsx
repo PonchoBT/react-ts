@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Grid, Card, CardContent, Typography, Link } from "@mui/material";
 
-function DogGrid() {
+function MapCardAxios() {
   const [dogs, setDogs] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function DogGrid() {
   );
 }
 
-export default DogGrid;
+export default MapCardAxios;
 
     
     

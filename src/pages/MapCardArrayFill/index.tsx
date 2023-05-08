@@ -7,7 +7,7 @@ const linkText = "Enlace de ejemplo";
 
 const names = Array(5).fill("");
 
-function MapCard() {
+function MapCardArrayFiil() {
   return (
     <Grid container spacing={3}>
       {names.map((name, index) => (
@@ -32,4 +32,4 @@ function MapCard() {
   );
 }
 
-export default MapCard;
+export default MapCardArrayFiil;
