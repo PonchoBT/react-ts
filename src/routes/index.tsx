@@ -4,8 +4,9 @@ import Stack from "@mui/material/Stack";
 import LinearProgress from "@mui/material/LinearProgress";
 import LazyHola from "../pages/LazyHola";
 import PadresHijos from "../pages/PadresHijos";
+import MapCard from "../pages/MapCard";
 import Page404 from "../pages/404";
-
+import MapCardAxios from "../pages/MapCardAxios"
 const LazyRouter = lazy(() => import("../pages/LazyRouter"));
 
 export default function Router() {
@@ -17,6 +18,8 @@ export default function Router() {
       path: "padreshijos", element: (<div><PadresHijos /></div>),
     },
     { path: "*", element: <Page404 /> },
+    { path: "mapcard", element: <MapCard /> },
+    { path: "mapcardaxios", element: <MapCardAxios /> },
     {
       path: "/",
       element: (
