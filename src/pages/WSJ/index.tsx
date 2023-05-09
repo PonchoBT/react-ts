@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../WSJ/wsj.css";
-import Button from "../WSJ/Button";
-import Item from "../WSJ/Item";
+import "./wsj.css";
+import Button from "./Button";
+import Item from "./Item";
 
 function WSJ() {
   const [items, setItems] = useState([{ id: 1, clicks: 0 }]);

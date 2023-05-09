@@ -10,27 +10,25 @@ import MapCardAxios from "../pages/MapCardAxios"
 import MapSinApi from "../pages/MapSinApi";
 import ContadorSuma from "../pages/ContadorSuma";
 import ContadorLimite from "../pages/ContadorLimite";
-import WJS from "../pages/WSJ";
+import WSJ from "../pages/WSJ";
+import Nav from "../pages/Nav"
 
 const LazyRouter = lazy(() => import("../pages/LazyRouter"));
 
 export default function Router() {
   let element = useRoutes([
-    {
-      path: "home", element: (<div><LazyHola /></div>),
-    },
-    {
-      path: "padreshijos", element: (<div><PadresHijos /></div>),
-    },
     { path: "*", element: <Page404 /> },
-    { path: "mapcard", element: <MapCard /> },
-    { path: "mapcardaxios", element: <MapCardAxios /> },
-    { path: "mapsinapi", element: <MapSinApi /> },
-    { path: "contadorsuma", element: <ContadorSuma /> },
-    { path: "contadorlimite", element: <ContadorLimite /> },
-    { path: "wjs", element: <WJS /> },
+    { path: "/", element: <Nav />},
+    { path: "lazy-hola", element: <LazyHola />},
+    { path: "padres-hijos", element: <PadresHijos />},
+    { path: "map-card", element: <MapCard /> },
+    { path: "map-card-axios", element: <MapCardAxios /> },
+    { path: "map-sin-api", element: <MapSinApi /> },
+    { path: "contador-suma", element: <ContadorSuma /> },
+    { path: "contador-limite", element: <ContadorLimite /> },
+    { path: "wsj", element: <WSJ /> },
     {
-      path: "/",
+      path: "lazyrouter",
       element: (
         <Suspense
           fallback={

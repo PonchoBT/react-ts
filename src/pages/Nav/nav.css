@@ -1,0 +1,10 @@
+.nav-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: blue;
+  }
+  
