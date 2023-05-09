@@ -8,7 +8,8 @@ import MapCard from "../pages/MapCardArrayFill";
 import Page404 from "../pages/404";
 import MapCardAxios from "../pages/MapCardAxios"
 import MapSinApi from "../pages/MapSinApi";
-import Contador from "../pages/ContadorSuma"
+import ContadorSuma from "../pages/ContadorSuma"
+import ContadorLimite from "../pages/ContadorLimite"
 
 
 const LazyRouter = lazy(() => import("../pages/LazyRouter"));
@@ -25,7 +26,8 @@ export default function Router() {
     { path: "mapcard", element: <MapCard /> },
     { path: "mapcardaxios", element: <MapCardAxios /> },
     { path: "mapsinapi", element: <MapSinApi /> },
-    { path: "contador", element: <Contador /> },
+    { path: "contadorsuma", element: <ContadorSuma /> },
+    { path: "contadorlimite", element: <ContadorLimite /> },
     {
       path: "/",
       element: (
