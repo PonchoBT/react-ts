@@ -8,9 +8,9 @@ import MapCard from "../pages/MapCardArrayFill";
 import Page404 from "../pages/404";
 import MapCardAxios from "../pages/MapCardAxios"
 import MapSinApi from "../pages/MapSinApi";
-import ContadorSuma from "../pages/ContadorSuma"
-import ContadorLimite from "../pages/ContadorLimite"
-
+import ContadorSuma from "../pages/ContadorSuma";
+import ContadorLimite from "../pages/ContadorLimite";
+import WJS from "../pages/WSJ";
 
 const LazyRouter = lazy(() => import("../pages/LazyRouter"));
 
@@ -28,6 +28,7 @@ export default function Router() {
     { path: "mapsinapi", element: <MapSinApi /> },
     { path: "contadorsuma", element: <ContadorSuma /> },
     { path: "contadorlimite", element: <ContadorLimite /> },
+    { path: "wjs", element: <WJS /> },
     {
       path: "/",
       element: (
