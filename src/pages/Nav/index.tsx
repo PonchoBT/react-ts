@@ -39,6 +39,11 @@ function Nav() {
         </Link>
       </Grid>
       <Grid item xs={12} sm={6} md={4}>
+        <Link to="/map-text" className="nav-link">
+          Map Text
+        </Link>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
         <Link to="/contador-suma" className="nav-link">
           Contador Suma
         </Link>

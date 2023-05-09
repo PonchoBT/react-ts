@@ -8,6 +8,7 @@ import MapCard from "../pages/MapCardArrayFill";
 import Page404 from "../pages/404";
 import MapCardAxios from "../pages/MapCardAxios"
 import MapSinApi from "../pages/MapSinApi";
+import MapText from "../pages/MapText"
 import ContadorSuma from "../pages/ContadorSuma";
 import ContadorLimite from "../pages/ContadorLimite";
 import WSJ from "../pages/WSJ";
@@ -24,8 +25,10 @@ export default function Router() {
     { path: "map-card", element: <MapCard /> },
     { path: "map-card-axios", element: <MapCardAxios /> },
     { path: "map-sin-api", element: <MapSinApi /> },
+    { path: "map-sin-api", element: <MapSinApi /> },
     { path: "contador-suma", element: <ContadorSuma /> },
     { path: "contador-limite", element: <ContadorLimite /> },
+    { path: "map-text", element: <MapText /> },
     { path: "wsj", element: <WSJ /> },
     {
       path: "lazyrouter",
