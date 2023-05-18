@@ -13,11 +13,6 @@ const VideoBackground: React.FC = () => {
         height="100%"
         style={{ position: 'absolute', top: 0, left: 0 }}
       />
-      <div className="content">
-        {/* Aquí puedes agregar el contenido de tu componente */}
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>Este es un ejemplo de fondo de video en React con TypeScript.</p>
-      </div>
     </div>
   );
 };
