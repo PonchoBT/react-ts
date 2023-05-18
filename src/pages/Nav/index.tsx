@@ -63,6 +63,11 @@ function Nav() {
           Video Background
         </Link>
       </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <Link to="/lazyrouter" className="nav-link">
+        Lazy Router imagen
+        </Link>
+      </Grid>
     </Grid>
   );
 }
