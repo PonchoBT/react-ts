@@ -58,6 +58,11 @@ function Nav() {
           WSJ
         </Link>
       </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <Link to="/video-background" className="nav-link">
+          Video Background
+        </Link>
+      </Grid>
     </Grid>
   );
 }

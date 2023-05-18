@@ -13,6 +13,7 @@ import ContadorSuma from "../pages/ContadorSuma";
 import ContadorLimite from "../pages/ContadorLimite";
 import WSJ from "../pages/WSJ";
 import Nav from "../pages/Nav"
+import VideoBackground from "../pages/VideoBackground/VideoBackground";
 
 const LazyRouter = lazy(() => import("../pages/LazyRouter"));
 
@@ -30,6 +31,7 @@ export default function Router() {
     { path: "contador-limite", element: <ContadorLimite /> },
     { path: "map-text", element: <MapText /> },
     { path: "wsj", element: <WSJ /> },
+    { path: "video-background", element: <VideoBackground /> },
     {
       path: "lazyrouter",
       element: (
