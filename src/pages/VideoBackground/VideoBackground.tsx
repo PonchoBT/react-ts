@@ -1,5 +1,7 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
+import React from "react";
+import ReactPlayer from "react-player";
+import "./videobackground.css";
+
 
 const VideoBackground: React.FC = () => {
   return (
@@ -11,8 +13,12 @@ const VideoBackground: React.FC = () => {
         muted
         width="100%"
         height="100%"
-        style={{ position: 'absolute', top: 0, left: 0 }}
+        style={{ position: "absolute", top: 0, left: 0 }}
       />
+      <div className="content">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Este es un ejemplo de fondo de video en React con TypeScript.</p>
+      </div>
     </div>
   );
 };
