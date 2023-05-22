@@ -1,39 +1,8 @@
 import "./videobackground.css";
-
-import { useState } from "react";
-
-import Vimeo from "@u-wave/react-vimeo";
-
 export default function App() {
-  const [isVimeoSource, setIsVimeoSource] = useState(false);
 
   return (
     <div className="full-screen-container">
-      <div className="label-text">
-        {isVimeoSource ? "Vimeo iFrame" : "HTML Video Element"}
-      </div>
-      <label className="switch">
-        <input
-          type="checkbox"
-          onClick={() => setIsVimeoSource((prev) => !prev)}
-        />
-        <span className="slider round" />
-      </label>
-
-      {isVimeoSource ? (
-        <Vimeo
-          className="react-vimeo-player"
-          video={"736830436"}
-          // width={"100%"}
-          //height={"100%"}
-          autoplay={true}
-          muted={true}
-          loop={true}
-          responsive={true}
-          // controls={false}
-          background={true}
-        />
-      ) : (
         <video className="full-screen-video" playsInline autoPlay muted loop>
           <source
             src={
@@ -42,7 +11,6 @@ export default function App() {
             type="video/mp4"
           />
         </video>
-      )}
     </div>
   );
 }
