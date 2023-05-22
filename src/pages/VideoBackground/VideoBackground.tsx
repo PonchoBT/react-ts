@@ -37,7 +37,7 @@ export default function App() {
         <video className="full-screen-video" playsInline autoPlay muted loop>
           <source
             src={
-              "https://frontendfactored.s3.us-west-1.amazonaws.com/GTP+ESPAN%CC%83OL.m4v"
+              "https://res.cloudinary.com/dlf5gecrf/video/upload/v1658606508/benjaminkratzin-website/BenjaminKratzin_DirectorReel_220722_Desktop_858p_4Mbs_v01_g2ufkx.mp4"
             }
             type="video/mp4"
           />
