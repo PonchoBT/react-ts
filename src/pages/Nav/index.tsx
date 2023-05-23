@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import "./nav.css";
+
 function Nav() {
   return (
     <Grid container spacing={2}>
