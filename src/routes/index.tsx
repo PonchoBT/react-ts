@@ -26,7 +26,6 @@ export default function Router() {
     { path: "map-card", element: <MapCard /> },
     { path: "map-card-axios", element: <MapCardAxios /> },
     { path: "map-sin-api", element: <MapSinApi /> },
-    { path: "map-sin-api", element: <MapSinApi /> },
     { path: "contador-suma", element: <ContadorSuma /> },
     { path: "contador-limite", element: <ContadorLimite /> },
     { path: "map-text", element: <MapText /> },
