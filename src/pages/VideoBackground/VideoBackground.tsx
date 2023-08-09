@@ -5,10 +5,9 @@ export default function App() {
     <div className="full-screen-container">
         <video className="full-screen-video" playsInline autoPlay muted loop>
           <source
-            src={
-              "https://frontendfactored.s3.us-west-1.amazonaws.com/video.mp4"
-            }
-            type="video/mp4"
+            src=
+              "https://frontendfactored.s3.us-west-1.amazonaws.com/gym.m4v"
+              type="video/mp4"
           />
         </video>
     </div>
