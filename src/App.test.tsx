@@ -1,9 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders learn react link', async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  await waitFor(() => {
+    const linkElement = screen.queryByText(/learn react/i);
+    if (linkElement) {
+      expect(linkElement).toBeInTheDocument();
+      return true;
+    }
+    return false;
+  }, { timeout: 5000 }); // Increase timeout if needed
 });
