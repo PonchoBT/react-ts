@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid, Card, CardContent, Typography, Link } from "@mui/material";
 
-const cardContent = "Contenido de la tarjeta";
-const linkUrl = "https://www.ejemplo.com";
-const linkText = "Enlace de ejemplo";
+const cardContent = "Card content";
+const linkUrl = "https://www.example.com";
+const linkText = "Example link";
 
 const names = Array(5).fill("");
 
-function MapCardArrayFiil() {
+function MapCardArrayFill() {
   return (
     <Grid container spacing={3}>
       {names.map((name, index) => (
@@ -15,10 +15,10 @@ function MapCardArrayFiil() {
           <Card>
             <CardContent>
               <Typography variant="h5" component="h2">
-                Título de la tarjeta {index + 1}
+                Card Title {index + 1}
               </Typography>
               <Typography color="textSecondary">
-                Subtítulo de la tarjeta
+                Card Subtitle
               </Typography>
               <Typography variant="body2" component="p">
                 {cardContent}
@@ -32,4 +32,4 @@ function MapCardArrayFiil() {
   );
 }
 
-export default MapCardArrayFiil;
+export default MapCardArrayFill;

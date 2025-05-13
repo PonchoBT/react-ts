@@ -29,7 +29,7 @@ function Nav() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/map-card" className="nav-link">
-            Map Card
+          Map Card Array Fill
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>

@@ -23,7 +23,7 @@ const LoadingFallback = () => (
           />
           <CardContent>
             <Typography variant="h6" align="center" sx={{ color: "#666" }}>
-              ¡Cargando imágenes de perritos!
+              Loading puppy images!
             </Typography>
             <Skeleton variant="text" width="60%" animation="wave" />
             <Skeleton variant="text" width="40%" animation="wave" />
@@ -92,7 +92,7 @@ function MapCardAxios() {
               height: img.naturalHeight,
               aspectRatio: img.naturalWidth / img.naturalHeight
             });
-            img.onerror = () => reject(new Error(`Error cargando: ${url}`));
+            img.onerror = () => reject(new Error(`Error loading: ${url}`));
           })
         );
 
@@ -101,7 +101,7 @@ function MapCardAxios() {
         setError(null);
         setAllImagesLoaded(true);
       } catch (err) {
-        setError('¡Ups! No pudimos cargar las fotos de los perritos. Inténtalo de nuevo más tarde.');
+        setError('Oops! We couldn\'t load the puppy photos. Please try again later.');
       } finally {
         setLoading(false);
       }
@@ -147,7 +147,7 @@ function MapCardAxios() {
           }}
         >
           <Typography variant="body1">
-            ¡Sin conexión! Por favor, verifica tu conexión a internet
+            No connection! Please check your internet connection
           </Typography>
         </div>
       )}
@@ -206,7 +206,7 @@ function MapCardAxios() {
                   )}
                   <img
                     src={dog.url}
-                    alt={`Perrito ${index + 1}`}
+                    alt={`Puppy ${index + 1}`}
                     style={{
                       ...getOptimizedImageStyle(dog.aspectRatio),
                       objectFit: "contain",
@@ -215,13 +215,13 @@ function MapCardAxios() {
                     }}
                     onError={(e) => {
                       const img = e.target as HTMLImageElement;
-                      img.src = "https://via.placeholder.com/300x200?text=Error+al+cargar+imagen";
+                      img.src = "https://via.placeholder.com/300x200?text=Error+loading+image";
                     }}
                   />
                 </div>
                 <CardContent>
                   <Typography variant="h6">
-                    Perrito {index + 1}
+                    Puppy {index + 1}
                   </Typography>
                 </CardContent>
               </Card>
@@ -231,7 +231,7 @@ function MapCardAxios() {
           <LoadingFallback />
         ) : (
           <Typography variant="h6" align="center" sx={{ width: "100%", mt: 2 }}>
-            No se encontraron imágenes
+            No images found
           </Typography>
         )}
       </Grid>
