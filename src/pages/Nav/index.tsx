@@ -9,22 +9,22 @@ function Nav() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography variant="h4" className="nav-title">
-            Mi Aplicación
+            My Application
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/" className="nav-link">
-            Inicio
+            Home
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/lazy-hola" className="nav-link">
-            Lazy Hola
+            Lazy Hello
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/padres-hijos" className="nav-link">
-            Padres y hijos
+            Parents and Children
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -39,7 +39,7 @@ function Nav() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/map-sin-api" className="nav-link">
-            Map sin API
+            Map without API
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -49,12 +49,12 @@ function Nav() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/contador-suma" className="nav-link">
-            Contador Suma
+            Counter Sum
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/contador-limite" className="nav-link">
-            Contador Límite
+            Counter Limit
           </Link>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -69,7 +69,7 @@ function Nav() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Link to="/lazyrouter" className="nav-link">
-            Lazy Router imagen
+            Lazy Router Image
           </Link>
         </Grid>
       </Grid>
