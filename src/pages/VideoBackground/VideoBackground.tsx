@@ -6,7 +6,7 @@ export default function App() {
         <video className="full-screen-video" playsInline autoPlay muted loop>
           <source
             src=
-              "https://frontendfactored.s3.us-west-1.amazonaws.com/gym.m4v"
+              "https://frontendfactored.s3.us-west-1.amazonaws.com/video.mp4"
               type="video/mp4"
           />
         </video>

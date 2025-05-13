@@ -17,12 +17,28 @@ import VideoBackground from "../pages/VideoBackground/VideoBackground";
 
 const LazyRouter = lazy(() => import("../pages/LazyRouter"));
 
+// Crear componente para el fallback
+const LoadingFallback = () => (
+  <div>
+    <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
+      <LinearProgress color="secondary" />
+      <LinearProgress color="success" />
+      <LinearProgress color="inherit" />
+    </Stack>
+  </div>
+);
+
+// Definir tipo para las rutas
+type RouteConfig = {
+  path: string;
+  element: React.ReactNode;
+}[];
+
 export default function Router() {
-  let element = useRoutes([
-    { path: "*", element: <Page404 /> },
-    { path: "/", element: <Nav />},
-    { path: "lazy-hola", element: <LazyHola />},
-    { path: "padres-hijos", element: <PadresHijos />},
+  const routes: RouteConfig = [
+    { path: "/", element: <Nav /> },
+    { path: "lazy-hola", element: <LazyHola /> },
+    { path: "padres-hijos", element: <PadresHijos /> },
     { path: "map-card", element: <MapCard /> },
     { path: "map-card-axios", element: <MapCardAxios /> },
     { path: "map-sin-api", element: <MapSinApi /> },
@@ -34,21 +50,14 @@ export default function Router() {
     {
       path: "lazyrouter",
       element: (
-        <Suspense
-          fallback={
-            <div>
-              <Stack sx={{ width: "100%", color: "grey.500" }} spacing={2}>
-                <LinearProgress color="secondary" />
-                <LinearProgress color="success" />
-                <LinearProgress color="inherit" />
-              </Stack>
-            </div>
-          }
-        >
+        <Suspense fallback={<LoadingFallback />}>
           <LazyRouter />
         </Suspense>
       ),
     },
-  ]);
+    { path: "*", element: <Page404 /> }, // Mover la ruta 404 al final
+  ];
+
+  const element = useRoutes(routes);
   return element;
 }
