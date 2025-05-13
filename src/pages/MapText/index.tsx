@@ -4,10 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
-import CodeIcon from '@mui/icons-material/Code';
-import PreviewIcon from '@mui/icons-material/Preview';
+
 
 interface Post {
   userId: number;
@@ -33,8 +30,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Button from '@mui/material/Button';
-import CodeIcon from '@mui/icons-material/Code';
-import PreviewIcon from '@mui/icons-material/Preview';
+
 
 interface Post {
   userId: number;
